@@ -5,3 +5,4 @@ var env = process.env;
 var env_ = [];
 for (var key in env) env_.push(key+'='+env[key]);
 proc.spawn({file:'/usr/bin/gnome-calculator',cwd:null,windowsVerbatimArguments:false,detached:false,envPairs:env_,stdio:[{type:'ignore'},{type:'ignore'},{type:'ignore'}]});
+alert('hello');
